@@ -1,164 +1,107 @@
+<<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nick Mayer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shadcn/ui@latest/dist/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #0f172a;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+   <!-- Profile Photo at Top -->
+<div class="w-full flex justify-center py-8 bg-gray-900">
+  <img src="images/profile-pic.png" alt="Nick Mayer" class="w-80 h-80 rounded-full object-cover border-4 border-blue-500 shadow-lg" />
+</div>
+    <!-- Hero Section -->
+    <section class="py-20 text-center bg-gradient-to-b from-gray-900 to-gray-800">
+      <h1 class="text-7xl font-bold mb-4">Nick Mayer Analytics Portfolio</h1>
+      <p class="text-4xl mb-6">PostGreSQL, MySQL, Python, Tableau</p>
+	  <p class="text-2xl mb-6">Data Analytics Professional, Spice Addict, Stand Up Comedy Enthusiast</p>
+      <a href="#projects" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">View My Work</a>
+    </section>
 
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Nick Mayer Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 bg-gray-800 py-4 px-6 shadow-md flex justify-between">
+      <div class="text-xl font-bold">Welcome!</div>
+      <nav>
+        <ul class="flex gap-4">
+          <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
+          <li><a href="https://github.com/Nick-Mayer-Analytics" class="hover:text-blue-400" target="_blank">GitHub</a></li>
+        </ul>
+      </nav>
+    </header>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+    <!-- Projects Section -->
+    <main id="projects" class="max-w-6xl mx-auto py-16 px-6">
+      <h2 class="text-3xl font-semibold text-center mb-12">Projects</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Nick Mayer Portfolio<br />
-						</h1>
-						<p>Analytics Professional skilled in SQL, Tableau and Python </p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+        <!-- Project Card -->
+        <div class="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl shadow-lg transition-transform hover:scale-105">
+          <img src="images/Globe 3.jpg" alt="Project 1" class="rounded mb-4" />
+          <h3 class="text-xl font-bold mb-2">Data Cleaning in SQL</h3>
+          <p class="text-gray-300 mb-4">Cleaned World Life Expectancy data using MySQL.</p>
+          <a href="https://github.com/Nick-Mayer-Analytics/Life-Expectancy-Data-Cleaning" class="text-blue-400 hover:underline">View Project</a>
+        </div>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Welcome!</a>
-					</header>
+        <div class="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl shadow-lg transition-transform hover:scale-105">
+          <img src="images/Coins.jpg" alt="Project 2" class="rounded mb-4" />
+          <h3 class="text-xl font-bold mb-2">Data Exploration in SQL</h3>
+          <p class="text-gray-300 mb-4">Explored U.S. Household Income data in MySQL.</p>
+          <a href="https://github.com/Nick-Mayer-Analytics/Household_Income_Data_Exploration" class="text-blue-400 hover:underline">View Project</a>
+        </div>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Projects</a></li>
-							
-						</ul>
-						<ul class="icons">
-							<li><a href="https://github.com/Nick-Mayer-Analytics" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+        <div class="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl shadow-lg transition-transform hover:scale-105">
+          <img src="images/Bank 3.jpg" alt="Project 3" class="rounded mb-4" />
+          <h3 class="text-xl font-bold mb-2">Global Investment Dashboard</h3>
+          <p class="text-gray-300 mb-4">Used Tableau to analyze World Bank investment data.</p>
+          <a href="https://public.tableau.com/app/profile/nick.mayer8571/viz/WorldBankFundingAnalysis/ChineseGlobalInvestment" class="text-blue-400 hover:underline">View Project</a>
+        </div>
 
-				<!-- Main -->
-					<div id="main">
+        <div class="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl shadow-lg transition-transform hover:scale-105">
+          <img src="images/Telecom 4.jpg" alt="Project 4" class="rounded mb-4" />
+          <h3 class="text-xl font-bold mb-2">Customer Churn Analysis</h3>
+          <p class="text-gray-300 mb-4">Created a dashboard for churn analysis in Tableau.</p>
+          <a href="https://public.tableau.com/app/profile/nick.mayer8571/viz/TelcoChurnDashboardMiniProject/ChurnRateDashboard" class="text-blue-400 hover:underline">View Project</a>
+        </div>
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									
-									<h2><a href="https://github.com/Nick-Mayer-Analytics/Life-Expectancy-Data-Cleaning/blob/main/Project%201%20-%20World%20Life%20Expectancy%20-%20Data%20Cleaning%20Portion.sql">Data Cleaning in SQL<br />
-									</a></h2>
-									<p> In This Project We Clean World Life Expectancy Data in MySQL</p>
-								</header>
-								<a href="https://github.com/Nick-Mayer-Analytics/Life-Expectancy-Data-Cleaning/blob/main/Project%201%20-%20World%20Life%20Expectancy%20-%20Data%20Cleaning%20Portion.sql" class="image main"><img src="images/Globe 3.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://github.com/Nick-Mayer-Analytics/Life-Expectancy-Data-Cleaning/blob/main/Project%201%20-%20World%20Life%20Expectancy%20-%20Data%20Cleaning%20Portion.sql" class="button large">View Project</a></li>
-								</ul>
-							</article>
+      <div class="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl shadow-lg transition-transform hover:scale-105">
+          <img src="images/Apple.jpg" alt="Project 5" class="rounded mb-4" />
+          <h3 class="text-xl font-bold mb-2">Customer Segmentation</h3>
+          <p class="text-gray-300 mb-4">Performed customer segmentation and regression using Python.</p>
+          <a href="https://github.com/Nick-Mayer-Analytics/Food_Marketing_EDA" class="text-blue-400 hover:underline">View Project</a>
+        </div>
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										
-										<h2><a href="https://github.com/Nick-Mayer-Analytics/Household_Income_Data_Exploration/blob/main/Project%202%20-%20US%20Household%20Income%20-%20EDA%20Portion.sql">Data Exploration in SQL<br />
-										</a></h2>
-									</header>
-									<a href="https://github.com/Nick-Mayer-Analytics/Household_Income_Data_Exploration/blob/main/Project%202%20-%20US%20Household%20Income%20-%20EDA%20Portion.sql" class="image fit"><img src="images/Coins.jpg" alt="" /></a>
-									<p>In This Project We Explore U.S. Household Income Data in MySQL</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Nick-Mayer-Analytics/Household_Income_Data_Exploration/blob/main/Project%202%20-%20US%20Household%20Income%20-%20EDA%20Portion.sql" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2><a href="https://public.tableau.com/app/profile/nick.mayer8571/viz/WorldBankFundingAnalysis/ChineseGlobalInvestment">Global Investment Dashboard With Tableau<br />
-										</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/Bank 3.jpg" alt="" /></a>
-									<p>Here we use interactive dashboards and stories in Tableau to analyze World Bank funding for global investment projects over time </p>
-									<ul class="actions special">
-										<li><a href="#" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2><a href="https://public.tableau.com/app/profile/nick.mayer8571/viz/TelcoChurnDashboardMiniProject/ChurnRateDashboard">Customer Churn Analysis With Tableau<br />
-										</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/Telecom 4.jpg" alt="" /></a>
-									<p>Here We Created A Churn Analysis Dashboard With Telecom Customer Data </p>
-									<ul class="actions special">
-										<li><a href="#" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2><a href="https://github.com/Nick-Mayer-Analytics/Food_Marketing_EDA/blob/main/Food%20Marketing%20Data%20Analysis.ipynb">Customer Segmentation<br />
-										</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/Apple.jpg" alt="" /></a>
-									<p> Here we do some customer segmentation and regression analysis on demographic data for a marketing company with Python </p>
-									<ul class="actions special">
-										<li><a href="#" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2><a href="https://github.com/Nick-Mayer-Analytics/Movie_Genre_EDA/blob/main/Movie%20Genre%20Data%20Analysis.ipynb">Movie Genre Data Analysis<br />
-										</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/Cinema.jpg" alt="" /></a>
-									<p>Here we do some exploratory data analysis using Movie data with Python </p>
-									<ul class="actions special">
-										<li><a href="#" class="button">View Project</a></li>
-									</ul>
-								</article>
-							         </ul>
-						<section class="split contact">
-							<section class="alt">
-								<h3>Location</h3>
-								<p><br />
-								New York, NY</p>
-							</section>
-							<section>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">nicholasmayer57@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://github.com/Nick-Mayer-Analytics" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+      <div class="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl shadow-lg transition-transform hover:scale-105">
+          <img src="images/Cinema.jpg" alt="Project 6" class="rounded mb-4" />
+          <h3 class="text-xl font-bold mb-2">Movie Genre Data Analysis</h3>
+          <p class="text-gray-300 mb-4">Explored and analyzed movie data using Python.</p>
+          <a href="https://github.com/Nick-Mayer-Analytics/Movie_Genre_EDA" class="text-blue-400 hover:underline">View Project</a>
+        </div>
+      </div>
+    </main>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+    <!-- Contact Section -->
+    <section class="bg-gray-800 py-12 px-6">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-2xl font-semibold mb-4">Contact</h2>
+        <p class="mb-2">📍 New York, NY</p>
+        <p class="mb-2">📧 <a href="mailto:nicholasmayer57@gmail.com" class="text-blue-400 hover:underline">nicholasmayer57@gmail.com</a></p>
+        <p>💼 <a href="https://github.com/Nick-Mayer-Analytics" target="_blank" class="text-blue-400 hover:underline">GitHub Profile</a></p>
+      </div>
+    </section>
 
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-4 text-center text-gray-500 text-sm">
+      <p>&copy; 2025 Nick Mayer. Built with Tailwind + ShadCN UI.</p>
+    </footer>
+  </body>
 </html>
